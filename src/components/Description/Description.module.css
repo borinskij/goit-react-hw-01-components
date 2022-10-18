@@ -1,0 +1,19 @@
+.avatar {
+  border-radius: 50%;
+  width: 180px;
+}
+.name {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+}
+.tag,
+.location {
+  font-size: 20px;
+  color: rgb(167, 174, 174);
+  font-weight: bold;
+}
+/* .location {
+  font-size: 24px;
+  color: rgb(214, 190, 190);
+} */
