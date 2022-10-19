@@ -1,7 +1,7 @@
 import css from './Profile.module.css';
-import { FotoUser } from 'components/Description/Description.jsx';
+import { FotoUser } from 'components/Profile/Description/Description.jsx';
 import user from 'assets/user.json';
-import { Stats } from 'components/Stats/Stats.jsx';
+import { Stats } from 'components/Profile/Stats/Stats.jsx';
 
 export const ProfileCard = () => {
   return (
