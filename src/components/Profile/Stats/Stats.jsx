@@ -24,5 +24,13 @@ export const Stats = ({ stats }) => {
 };
 
 // Stats.propTypes = {
-//   stats: PropTypes.object(PropTypes.string).isRequired,
+//   user: PropTypes.objectOf(
+//     PropTypes.shape({
+//       username: PropTypes.string.isRequired,
+//       location: PropTypes.string.isRequired,
+//       tag: PropTypes.string.isRequired,
+//       avatar: PropTypes.string.isRequired,
+//       stats: PropTypes.object.isRequired,
+//     })
+//   ),
 // };

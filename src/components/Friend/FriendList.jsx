@@ -1,7 +1,7 @@
-import data from 'assets/friends.json';
 import css from './Friend.module.css';
+import PropTypes from 'prop-types';
 
-export const FriendList = () => {
+export const FriendList = ({ data }) => {
   return (
     <>
       {data.map(data => (
@@ -27,7 +27,13 @@ export const FriendList = () => {
   );
 };
 
-//    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
-//     "name": "Mango",
-//     "isOnline": true,
-//     "id": 1812
+FriendList.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ),
+};

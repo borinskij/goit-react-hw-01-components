@@ -1,5 +1,4 @@
 import css from './Description.module.css';
-import PropTypes from 'prop-types';
 
 export const FotoUser = ({ avatar, username, tag, location }) => {
   return (
@@ -10,11 +9,4 @@ export const FotoUser = ({ avatar, username, tag, location }) => {
       <p className={css.location}>{location}</p>
     </>
   );
-};
-
-FotoUser.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
 };

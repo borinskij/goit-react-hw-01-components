@@ -1,6 +1,6 @@
-import data from 'assets/transactions.json';
+import PropTypes from 'prop-types';
 
-export const List = () => {
+export const List = ({ data }) => {
   return (
     <>
       {data.map(data => (
@@ -16,7 +16,13 @@ export const List = () => {
   );
 };
 
-// "id": "1e0700a2-5183-4291-85cc-2065a036a683",
-// "type": "invoice",
-// "amount": "964.82",
-// "currency": "LRD"
+List.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};

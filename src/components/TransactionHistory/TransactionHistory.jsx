@@ -1,7 +1,7 @@
 import css from './TransactionHistory.module.css';
 import { List } from './TransactionHistoryList.jsx';
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({ data }) => {
   return (
     <table className={css.transactionHistory}>
       <thead>
@@ -12,7 +12,7 @@ export const TransactionHistory = () => {
         </tr>
       </thead>
       <tbody>
-        <List />
+        <List data={data} />
       </tbody>
     </table>
   );

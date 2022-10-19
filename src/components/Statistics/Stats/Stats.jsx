@@ -1,7 +1,7 @@
-import data from 'assets/data.json';
 import css from './Stats.module.css';
+import PropTypes from 'prop-types';
 
-export const Stats = () => {
+export const Stats = ({ data }) => {
   function generateColor() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
   }
@@ -19,4 +19,14 @@ export const Stats = () => {
       ))}
     </ul>
   );
+};
+
+Stats.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
