@@ -1,5 +1,5 @@
 import css from './Stats.module.css';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export const Stats = ({ stats }) => {
   return (
@@ -23,6 +23,6 @@ export const Stats = ({ stats }) => {
   );
 };
 
-Stats.propTypes = {
-  stats: PropTypes.object(PropTypes.string).isRequired,
-};
+// Stats.propTypes = {
+//   stats: PropTypes.object(PropTypes.string).isRequired,
+// };

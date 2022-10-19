@@ -1,0 +1,19 @@
+.transactionHistory {
+  margin: auto;
+  padding: 20px;
+  caption-side: bottom;
+  color: #666;
+  /* text-align: center; */
+  letter-spacing: 1px;
+}
+
+table {
+  border: 1px solid #ccc;
+}
+tr {
+  border: 1px solid #ccc;
+}
+td,
+th {
+  border: 1px solid #ccc;
+}
